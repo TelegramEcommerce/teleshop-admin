@@ -5,8 +5,21 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TeleShop Admin</title>
-    <script type="module" crossorigin src="/assets/index-BoDgd7iU.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-D6k-k9pZ.css">
+    <script>
+      document.addEventListener('contextmenu', e => e.preventDefault());
+      document.addEventListener('keydown', e => {
+        if (e.key === 'F12' ||
+            (e.ctrlKey && e.shiftKey && ['I','J','C','K'].includes(e.key.toUpperCase())) ||
+            (e.ctrlKey && e.key === 'U') ||
+            (e.ctrlKey && e.shiftKey && e.key === 'U') ||
+            (e.metaKey && e.altKey && e.key === 'I')
+        ) {
+          e.preventDefault();
+        }
+      });
+    </script>
+    <script type="module" crossorigin src="/assets/index-Dh5mE-JA.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Bgfwh_EV.css">
   </head>
   <body>
     <div id="root"></div>
