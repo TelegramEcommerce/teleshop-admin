@@ -1,1 +1,0 @@
-import{q as a}from"./index-Sp9IvoE3.js";const s=t=>a.get(`/public/shop/${t}`).then(e=>e.data),g=t=>a.get(`/bots/${t}/public-slug`).then(e=>e.data),l=t=>a.post(`/bots/${t}/generate-slug`).then(e=>e.data);export{g as a,s as b,l as g};
