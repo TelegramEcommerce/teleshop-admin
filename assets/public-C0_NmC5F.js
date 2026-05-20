@@ -1,0 +1,1 @@
+import{s}from"./index-sFfvtbBP.js";const o=t=>s.get(`/public/shop/${t}`).then(e=>e.data),g=t=>s.get(`/bots/${t}/public-slug`).then(e=>e.data),l=t=>s.post(`/bots/${t}/generate-slug`).then(e=>e.data);export{g as a,o as b,l as g};
