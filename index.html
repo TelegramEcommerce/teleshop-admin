@@ -21,6 +21,11 @@
           e.preventDefault();
         }
       });
+      document.addEventListener('dragstart', e => {
+        if (!e.target.closest('input, textarea, [contenteditable]')) {
+          e.preventDefault();
+        }
+      });
       document.addEventListener('keydown', e => {
         if (e.key === 'F12' ||
             (e.ctrlKey && e.shiftKey && ['I','J','C','K'].includes(e.key.toUpperCase())) ||
@@ -32,8 +37,8 @@
         }
       });
     </script>
-    <script type="module" crossorigin src="/assets/index-AjmpX6DJ.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CkcpjPMm.css">
+    <script type="module" crossorigin src="/assets/index-DoeuLdJ7.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CrRQgvpv.css">
   </head>
   <body>
     <div id="root"></div>
