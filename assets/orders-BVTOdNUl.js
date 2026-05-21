@@ -1,0 +1,1 @@
+import{s as a}from"./index-6quudJES.js";const d=t=>a.get("/orders",{params:t}).then(e=>e.data),n=(t,e)=>a.patch(`/orders/${t}/status`,e).then(r=>r.data),o=t=>a.get("/orders/pending-count",{params:{bot_id:t}}).then(e=>e.data);export{d as a,o as g,n as u};
